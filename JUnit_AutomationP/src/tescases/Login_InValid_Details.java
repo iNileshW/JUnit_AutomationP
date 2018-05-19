@@ -44,6 +44,7 @@ public class Login_InValid_Details {
 		driver.findElement(By.id("SubmitLogin")).click();
 		String loginmsg=driver.findElement(By.xpath("//*[@id=\"center_column\"]/div[1]/ol/li")).getText();
 		System.out.println(loginmsg);
+		assertEquals(loginmsg,"1.Authentication failed.");
 	}
 	
 	@After
